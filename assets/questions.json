@@ -1,0 +1,160 @@
+{
+	"questions": [{
+			"question": "You’re really busy at work and a colleague is telling you their life story and personal woes. You",
+			"answers": [{
+					"answerText": "Don’t dare to interrupt them",
+					"type": "introvert",
+					"index": "A"
+				},
+
+				{
+					"answerText": "Think it’s more important to give them some of your time; work can wait",
+					"type": "extrovert",
+					"index": "B"
+				},
+
+				{
+					"answerText": "Listen, but with only with half an ear",
+					"type": "extrovert",
+					"index": "C"
+				},
+
+				{
+					"answerText": "Interrupt and explain that you are really busy at the moment",
+					"type": "introvert",
+					"index": "D"
+				}
+
+
+			]
+		},
+
+		{
+			"question": "You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You:",
+			"answers": [{
+					"answerText": "Look at your watch every two minutes",
+					"type": "introvert",
+					"index": "A"
+				},
+
+				{
+					"answerText": "Bubble with inner anger, but keep quiet",
+					"type": "extrovert",
+					"index": "B"
+				},
+
+				{
+					"answerText": "Explain to other equally impatient people in the room that the doctor is always running late",
+					"type": "extrovert",
+					"index": "C"
+				},
+
+				{
+					"answerText": "Complain in a loud voice, while tapping your foot impatientlyt",
+					"type": "introvert",
+					"index": "D"
+				}
+
+			]
+		},
+
+		{
+			"question": "You’re having an animated discussion with a colleague regarding a project that you’re in charge of. You:",
+			"answers": [{
+					"answerText": "Don’t dare contradict them",
+					"type": "introvert",
+					"index": "A"
+				},
+
+				{
+					"answerText": "Think that they are obviously right",
+					"type": "introvert",
+					"index": "B"
+				},
+
+				{
+					"answerText": "Defend your own point of view, tooth and nail",
+					"type": "extrovert",
+					"index": "C"
+				},
+
+				{
+					"answerText": "Continuously interrupt your colleague",
+					"type": "extrovert",
+					"index": "D"
+				}
+
+
+			]
+
+		},
+
+
+
+
+
+		{
+			"question": "You are taking part in a guided tour of a museum. You:",
+			"answers": [{
+					"answerText": "Are a bit too far towards the back so don’t really hear what the guide is saying",
+					"type": "introvert",
+					"index": "A"
+				},
+
+				{
+					"answerText": "Follow the group without question",
+					"type": "extrovert",
+					"index": "B"
+				},
+
+				{
+					"answerText": "Make sure that everyone is able to hear properly",
+					"type": "extrovert",
+					"index": "C"
+				},
+
+				{
+					"answerText": "Are right up the front, adding your own comments in a loud voice",
+					"type": "introvert",
+					"index": "D"
+				}
+
+
+			]
+
+		}
+		,
+
+		{
+			"question": "During dinner parties at your home, you have a hard time with people who:",
+			"answers": [{
+					"answerText": "Ask you to tell a story in front of everyone else",
+					"type": "introvert",
+					"index": "A"
+				},
+
+				{
+					"answerText": "Talk privately between themselves",
+					"type": "extrovert",
+					"index": "B"
+				},
+
+				{
+					"answerText": "Hang around you all evening",
+					"type": "extrovert",
+					"index": "C"
+				},
+
+				{
+					"answerText": "Always drag the conversation back to themselves",
+					"type": "introvert",
+					"index": "D"
+				}
+
+
+			]
+
+		}
+
+	]
+}
