@@ -1,16 +1,14 @@
-# personality_test
+# Personality Test
 
 personality test application
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+a simple app help you to know your  personality by asking few questions to identify weather your personality is more to introvert ot extrovert.
 
-A few resources to get you started if this is your first Flutter project:
+you can download the Android apk from Codemagic release :
+https://api.codemagic.io/artifacts/dd13fadb-5bb7-4ab9-a953-269c184cf902/d53b94b4-946b-46bb-ba85-aff698e3038a/app-release.apk
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
