@@ -39,10 +39,10 @@ class _LandingPageState extends State<LandingPage> {
             const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                "Are you an introvert or an extrovert?",
+                "Personality Test",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 22,
                     decoration: TextDecoration.none,
                     fontStyle: FontStyle.normal,
                     fontWeight: FontWeight.w700,

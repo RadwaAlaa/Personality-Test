@@ -4,6 +4,8 @@ import 'package:flutter_slider_indicator/flutter_slider_indicator.dart';
 import 'package:personality_test/data/model/question_model.dart';
 import 'package:personality_test/presentation/cubit/cubit/questions_cubit.dart';
 
+import 'next_question_btn_widget.dart';
+
 class QuestionsView extends StatefulWidget {
   QuestionsView({required this.questionsList, Key? key}) : super(key: key);
 
@@ -17,12 +19,27 @@ class _QuestionsViewState extends State<QuestionsView> {
   bool isNextBtnEnabled = false;
   String btnText = "Next";
   Color selectedColor = Colors.white10;
+  String headerTxt = "Answer the following questions:";
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            headerTxt,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+                fontSize: 20,
+                fontFamily: "Ariel",
+                decoration: TextDecoration.none,
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.w700,
+                color: Colors.pink),
+          ),
+        ),
         Container(
           margin: const EdgeInsets.all(8.0),
           decoration: BoxDecoration(
@@ -110,38 +127,33 @@ class _QuestionsViewState extends State<QuestionsView> {
             size: 20,
           ),
         ),
-        Container(
-          alignment: Alignment.center,
-          margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
-          child: MaterialButton(
-            minWidth: MediaQuery.of(context).size.width - 40,
-            enableFeedback: isNextBtnEnabled,
-            color: isNextBtnEnabled
-                ? const Color(0xFF34C9C6)
-                : const Color(0XFFCCd6E0),
-            child: Text(btnText),
-            onPressed: () {
-              if (isNextBtnEnabled) {
-                setState(() {
-                  if (idx < widget.questionsList.length - 1) {
-                    if (idx == widget.questionsList.length - 2) {
-                      btnText = "finish";
-                    }
-                    idx++;
-                    isNextBtnEnabled = false;
-                  } else {
-                    if (idx == widget.questionsList.length - 1) {
-                      setState(() {
-                        context.read<QuestionCubit>().calculateResult();
-                      });
-                    }
-                  }
-                });
-              }
-            },
-          ),
+        NextQuestionButton(
+          isNextBtnEnabled: isNextBtnEnabled,
+          btnText: btnText,
+          btnClickedFn: next_btn_clicked,
         )
       ],
     );
+  }
+
+  void next_btn_clicked(BuildContext context) {
+    if (isNextBtnEnabled) {
+      setState(() {
+        if (idx < widget.questionsList.length - 1) {
+          if (idx == widget.questionsList.length - 2) {
+            btnText = "finish";
+            headerTxt = "Almost Done!";
+          }
+          idx++;
+          isNextBtnEnabled = false;
+        } else {
+          if (idx == widget.questionsList.length - 1) {
+            setState(() {
+              context.read<QuestionCubit>().calculateResult();
+            });
+          }
+        }
+      });
+    }
   }
 }
