@@ -1,4 +1,4 @@
-# personality_test
+# Personality Test
 
 personality test application
 
